@@ -1,0 +1,142 @@
+Q: Vifm doesn't run executables, what's wrong with it?
+
+A: Nothing.  Just set 'runexec' option on.  It's off by default.
+
+--------------------------------------------------------------------------------
+Q: How can I use SSH with vifm?
+
+A: Follow this steps:
+   1) Download and install sshfs
+   2) Register an extension that will be used for connections over SSH.
+      The format is:
+      :filetype extensions FUSE_MOUNT2|some_mount_command using %PARAM and %DESTINATION_DIR variables
+
+      A sample line might look like this:
+      :filetype *.ssh FUSE_MOUNT2|sshfs %PARAM %DESTINATION_DIR
+
+      %PARAM and %DESTINATION_DIR are filled in by vifm at runtime.
+      %PARAM value is filled from the first line of file (whole line).
+
+      You can also add %CLEAR if you want to clear screen before running FUSE
+      program.
+   3) Create a file with ssh extension that contain connection parameters in the
+      first line.  A sample first line could be:
+      root@127.0.0.1:/
+
+--------------------------------------------------------------------------------
+
+Q: How can one access FTP with vifm?
+
+A: Since vifm tries to adhere to the Unix philosophy VFS (Virtual File System)
+probably will not be added.  To access FTP on a Unix-like system use FUSE file
+system (see curlftpfs project at http://curlftpfs.sourceforge.net).  FUSE isn't
+implemented for Windows, so Windows users should use one of programs that bind
+FTP connections to file system (for example FTPDrive at
+http://www.killprog.com/fdrve.html).
+
+--------------------------------------------------------------------------------
+
+Q: How can I customize vifm?
+
+A: There are several ways to do that:
+
+  - using vifmrc file (it's in ~/.vifm/)
+    This file can contain any of vifm commands.  You probably would like too set
+    mappings and options here.  vifm will never change this file (it's something
+    similar too ~/.vimrc).
+
+  - changing color scheme (~/.vifm/colorschemes)
+    You can set change colors of different TUI elements of vifm here. Or add
+    completely new color schemes.
+
+--------------------------------------------------------------------------------
+
+Q: What operations can be undone/redone?
+
+A: List of currently supported operations:
+  - rename
+  - move
+  - copy
+  - delete (when using Trash)
+  - permissions change (chmod)
+  - owner change
+  - group change
+  - chmod
+  - creating symbolic links with absolute paths
+  - creating symbolic links with relative paths
+  - creating of directories
+
+--------------------------------------------------------------------------------
+
+Q: How can one execute vifm commands after using :! ?
+
+A: The only way to do this is using :execute command.  Example:
+  :execute ":!shell command" | vifm command
+
+--------------------------------------------------------------------------------
+
+Q: Is there a way to copy/paste without sending to trash first?
+
+A: Yes, to do that, one should yank (copy) files as usual, but use "P" key (not
+"p") to put (paste) them into current directory.
+
+--------------------------------------------------------------------------------
+
+Q: vifm expands macros in a wrong way in user defined commands with vifm's
+   commands (like in `:command com :mkdir ~/tmp/%c:e | cd ~/tmp/%c:e`).  What to
+   do to fix it?
+
+A: Just double percent sign (%%).  Why?  Because user commands containing
+   vifm's command-line commands are parsed twice.  First time to replace %a
+   macro, and second time during command execution.  So doubled percent sign
+   will be parsed with single % during first parse and a %x macro will be
+   expanded during second parse.
+
+--------------------------------------------------------------------------------
+
+Q: vifm expands range in a wrong way in user defined commands (like in
+   `:command com :%yank`) and shows "Invalid command name" message.  What to
+   do to fix it?
+
+A: See answer for the previous question.
+
+--------------------------------------------------------------------------------
+
+Q: How to browse FTP in vifm?
+
+A: Use CurlFTPFS FUSE filesystem on *nix, which you can find here:
+     http://curlftpfs.sourceforge.net/
+   And on Windows you need to use FTPDrive, which will mount a FTP remote as
+   a drive for you. Get it here:
+     http://www.killprog.com/fdrve.html
+
+--------------------------------------------------------------------------------
+
+Q: How can I help vifm?
+
+A: Just use it and report any problems, bugs or suggestions to its developers by
+   email or trackers.  You also can send you configuration and colorscheme files
+   to developers.  They can be collected and published at site of vifm.
+   Examples of configuration files can also show developers of vifm how users
+   typically uses vifm, so they can improve support of the most common use
+   cases.
+
+--------------------------------------------------------------------------------
+
+Q: How to make shell aliases and functions work in vifm when running them like
+   ":!foo"?
+
+A: Here is solution for bash, other shells should allow to do something similar.
+
+   1. Add the following lines to ~/.bashrc
+
+       shopt -s expand_aliases
+       unset BASH_ENV
+
+   2. Add the following line to ~/.vifm/vifmrc
+
+       let $BASH_ENV='~/.bashrc'
+
+   After following the steps above aliases and functions should work the same
+   way as if they were typed in interactive shell by user.  But they won't be
+   completed with <tab> completion.

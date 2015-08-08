@@ -1,0 +1,7 @@
+ipc.o: ipc.c /usr/include/stdc-predef.h ../config.h ipc.h
+
+/usr/include/stdc-predef.h:
+
+../config.h:
+
+ipc.h:
