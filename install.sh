@@ -2,6 +2,10 @@ sudo apt-get install ssh
 sudo apt-get install vim
 sudo apt-get install htop
 
+sudo apt-add-repository ppa:webupd8team/java
+sudo apt-get update
+sudo apt-get install oracle-java8-installer
+
 cp ~/.profile ~/.profile.bk
 cp ./data/profile ~/.profile
 echo "source .profile" >> ~/.bashrc 
