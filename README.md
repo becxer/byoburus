@@ -1,6 +1,6 @@
 # byoburus
 byobuable tools compilation
-byobu, vifm, htop
+byobu, vifm, htop, profile, vimrc
 
 #HOW TO SETUP
 $./install.sh
