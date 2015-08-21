@@ -1,5 +1,6 @@
 # byoburus
-More easy to setup linux package - byobu, vifm, etc.. 
+byobuable tools compilation
+byobu, vifm, htop
 
 #HOW TO SETUP
 $./install.sh
