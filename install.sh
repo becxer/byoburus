@@ -23,9 +23,6 @@ sudo ./configure
 sudo make
 sudo make install
 
-git clone https://gist.github.com/30fc93bc56c8ab006a17.git
-mv 30fc93bc56c8ab006a17 pydemon
-
 echo " "
 echo "=========="
 echo "Install Complete"
