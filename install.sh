@@ -5,11 +5,8 @@ sudo apt-get install htop
 sudo apt-add-repository ppa:webupd8team/java
 sudo apt-get update
 sudo apt-get install oracle-java8-installer
+sudo apt-get install python-numpy python-scipy python-matplotlib ipython ipython-notebook python-pandas python-sympy python-nose
 
-cp ~/.profile ~/.profile.bk
-cp ./data/profile ~/.profile
-echo "source .profile" >> ~/.bashrc 
-source ~/.profile
 
 cp ~/.vimrc ~/.vimrc.bk
 cp ./data/vimrc ~/.vimrc
