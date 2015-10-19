@@ -3,6 +3,6 @@
 tools which can collaborate with byobu
 such as vifm, htop, emacs
 
-#HOW TO SETUP
+### HOW TO SETUP
 
-$./install.sh
+    $./install.sh
