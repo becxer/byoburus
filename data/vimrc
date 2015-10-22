@@ -51,7 +51,7 @@ set expandtab " always convert tab to space
 set laststatus=2
 set statusline=%F\ %m%h%r%<%=\ [%{&ff},%{&fenc}]\ [%Y]\ [%l,%v]\ [%L]\[%p%%]
 au InsertEnter * hi StatusLine ctermfg=Green guifg=Green
-au InsertLeave * hi StatusLine ctermfg=Yellow guifg=Yellow
+au InsertLeave * hi StatusLine ctermfg=Red guifg=Red
 
 " locate your cursor to last modified
 au BufReadPost *
