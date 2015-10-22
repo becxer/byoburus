@@ -15,6 +15,7 @@ installation include tools below
     - iftop
     - ctags
     - .vimrc
+    - .ctags
 
 ### HOW TO SETUP
 
