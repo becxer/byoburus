@@ -1,9 +1,10 @@
 #byoburus
 
-tools which can collaborate with byobu
+becxer's byobuable development environment
 
-such as vifm, htop, emacs
-
+    - vifm
+    - htop
+    - emacs
 
 ### HOW TO SETUP
 
