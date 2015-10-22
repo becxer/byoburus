@@ -15,6 +15,13 @@ let g:email = "becxer87@gmail.com"
 let g:user = "becxer"
 let g:license = "MIT"
 
+"Customize toggle shortcut
+noremap <c-e> :NERDTreeToggle<cr>
+noremap <c-b> :Tagbar<cr>
+noremap <c-f> :tabNext<cr>
+noremap <c-n> :set invnumber<cr> :set list!<cr>
+noremap <c-p> :set paste!<cr>
+
 "file & encoding
 set encoding=utf-8 " set read encoding to utf-8
 set fileencoding=utf-8 " set write encoding to utf-8
