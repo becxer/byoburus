@@ -4,19 +4,28 @@ becxer's byobuable development environment
 
 installation include tools below
 
-    - vifm
+    dev set
     - htop
     - emacs
-    - vim
-    - vim-plugin(jedi,NERDTree,tag,template)
     - scikit
     - pydemon
     - java
     - iftop
+    
+    vim set
+    - vim
+    - vim-plugin(jedi,NERDTree,tag,template)
     - ctags
+    - vifm
     - .vimrc
     - .ctags
 
 ### HOW TO SETUP
 
-    $./install.sh
+ * To install dev set
+
+    $./install-dev.sh
+    
+ * To install vim set
+ 
+    $./install-vim.sh
