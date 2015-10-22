@@ -2,16 +2,26 @@
 sudo apt-get install ssh
 sudo apt-get install vim
 sudo apt-get install htop
+sudo apt-get install iftop
+sudo apt-get install exuberant-ctags
 
 #install language for default
 sudo apt-add-repository ppa:webupd8team/java
 sudo apt-get update
 sudo apt-get install oracle-java8-installer
 sudo apt-get install python-numpy python-scipy python-matplotlib ipython ipython-notebook python-pandas python-sympy python-nose
+sudo apt-get install python-pip
+
+#install through pip
+sudo pip install pydemon
+sudo pip install jedi
 
 #replace vimrc
 cp ~/.vimrc ~/.vimrc.bk
 cp ./data/vimrc ~/.vimrc
+
+#install vim plugins
+
 
 #install byobu
 sudo apt-get install libncursesw5-dev
