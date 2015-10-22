@@ -1,50 +1,53 @@
-set hlsearch " 검색어 하이라이팅
-set nu " 줄번호
-set autoindent " 자동 들여쓰기
-set scrolloff=2
-set wildmode=longest,list
-set ts=4 "tag select
-set sts=4 "st select
-set sw=1 " 스크롤바 너비
-set autowrite " 다른 파일로 넘어갈 때 자동 저장
-set autoread " 작업 중인 파일 외부에서 변경됬을 경우 자동으로 불러옴
-set cindent " C언어 자동 들여쓰기
-set bs=eol,start,indent
-set history=256
-set laststatus=2 " 상태바 표시 항상
+ "
+"   becxer's vim options
+"
+"   @ author becxer
+"   @ email becxer87@gmail.com
+"
 
+"required for pathogen auto install
+execute pathogen#infect()
+syntax on
+filetype plugin indent on
 
-set paste " 붙여넣기 계단현상 없애기
-set shiftwidth=4 " 자동 들여쓰기 너비 설정
-set showmatch " 일치하는 괄호 하이라이팅
-set smartcase " 검색시 대소문자 구별
-set smarttab
-set smartindent
-set softtabstop=4
-set tabstop=4
-set ruler " 현재 커서 위치 표시
-set incsearch
-set statusline=\ %<%l:%v\ [%P]%=%a\ %h%m%r\ %F\
-set noswapfile
+" Customize the settings for vim-template plugin
+let g:email = "becxer87@gmail.com"
+let g:user = "becxer"
+let g:license = "MIT"
 
+"file & encoding
+set encoding=utf-8 " set read encoding to utf-8
+set fileencoding=utf-8 " set write encoding to utf-8
+set autowrite " auto write when moved cursor
+set autoread " auto read when file changed
+set noswapfile " set no create swapfile
 
-" 마지막으로 수정된 곳에 커서를 위치함
+"edit option & indent
+set nu " set line number
+set showmatch " highlight match brace
+set smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class "indent nextline keywords"
+set nocindent " no auto indent like c,c++,java style
+set listchars=tab:>-,trail:.,extends:>,precedes:<,eol:$ "set space,tab to char
+set list "set listchars above
+colorscheme ron " set color scheme
+
+"searching keyword
+set hlsearch " highlight searching keywords
+
+"tab setting
+set tabstop=8 " set real tab to space 8
+set softtabstop=4 " set keystroke tab to space 4
+set shiftwidth=4 " set <, > key to space 4
+set expandtab " always convert tab to space
+
+"setup below status line
+set laststatus=2
+set statusline=%F\ %m%h%r%<%=\ [%{&ff},%{&fenc}]\ [%Y]\ [%l,%v]\ [%L]\[%p%%]
+au InsertEnter * hi StatusLine ctermfg=Green guifg=Green
+au InsertLeave * hi StatusLine ctermfg=Yellow guifg=Yellow
+
+" locate your cursor to last modified
 au BufReadPost *
 \ if line("'\"") > 0 && line("'\"") <= line("$") |
 \ exe "norm g`\"" |
 \ endif
-
-
-" 파일 인코딩을 UTF-8로
-set encoding=utf-8
-set fileencoding=utf-8
-
-
-" 구문 강조 사용
-if has("syntax")
- syntax on
-endif
-
-
-" 컬러 스킴 사용
-colorscheme ron
