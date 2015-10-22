@@ -4,7 +4,8 @@ becxer's byobuable development environment
 
 installation include tools below
 
-    dev set
+ * dev set
+
     - htop
     - emacs
     - scikit
@@ -12,7 +13,8 @@ installation include tools below
     - java
     - iftop
     
-    vim set
+ * vim set
+
     - vim
     - vim-plugin(jedi,NERDTree,tag,template)
     - ctags
@@ -24,8 +26,8 @@ installation include tools below
 
  * To install dev set
 
-    $./install-dev.sh
+        $./install-dev.sh
     
  * To install vim set
  
-    $./install-vim.sh
+        $./install-vim.sh
