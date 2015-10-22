@@ -1,0 +1,9 @@
+—python-kinds=-i
+—recurse=yes
+—tag-relative=yes
+—exclude=build
+—exclude=dist
+—exclude=sample
+—exclude=test
+—exclude=tool
+—exclude=.git
