@@ -28,6 +28,10 @@ sudo pip install jedi
 cp ~/.vimrc ~/.vimrc.bk
 cp ./data/vimrc ~/.vimrc
 
+#replace ctags
+cp ~/.ctags ~/.ctags.bk
+cp ./data/ctags ~/.ctags
+
 #install for vifm (newer version & past version is not working..)
 tar -jxvf ./data/vifm-0.7.7.tar.bz2
 cd vifm-0.7.7
