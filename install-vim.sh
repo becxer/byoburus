@@ -3,6 +3,7 @@ sudo apt-get update
 
 #linux tools
 sudo apt-get install vim
+sudo apt-get install git
 sudo apt-get install exuberant-ctags
 
 #install library for default
