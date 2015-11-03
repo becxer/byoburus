@@ -119,7 +119,6 @@ alias la='ls -A'
 alias l='ls -CF'
 alias lr='ls -lR'
 alias lt='ls -ltr'
-alias ls="ls -v"
 
 # some other aliases
 alias rm='rm -i'
