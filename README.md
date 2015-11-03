@@ -31,3 +31,7 @@ installation include tools below
  * To install vim set
  
         $./install-vim.sh
+
+ * To install prompt
+ 
+        $./install-prompt.sh
