@@ -1,7 +1,5 @@
-#apt-get setting 
+#install git required to git prompt
 sudo apt-get update
-
-#linux tools
 sudo apt-get install git
 
 #replace bashrc & profile
