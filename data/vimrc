@@ -38,6 +38,12 @@ set listchars=tab:>-,trail:.,extends:>,precedes:<,eol:$ "set space,tab to char
 set list "set listchars above
 colorscheme ron " set color scheme
 
+"keep 80 columns
+set colorcolumn=80
+highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+match OverLength /\%81v.\+/
+autocmd WinEnter * match OverLength /\%81v.\+/
+
 "searching keyword
 set hlsearch " highlight searching keywords
 
