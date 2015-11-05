@@ -12,6 +12,10 @@ cp ./data/profile ~/.profile
 cp ./data/git-prompt.sh ~/.git-prompt.sh
 cp ./data/git-completion.bash ~/.git-completion.bash
 
+#add git config & message
+cp ./data/gitconfig ~/.gitconfig
+cp ./data/gitmessage.txt ~/.gitmessage.txt
+
 source ~/.profile
 
 echo "..."

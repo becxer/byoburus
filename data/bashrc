@@ -131,6 +131,8 @@ alias vm='vim'
 alias gs="git status"
 alias ga="git add"
 alias gcm="git commit"
+alias gl="git gl"
+
 
 # Find file name
 function ff() { find . -name '*'$1'*' ; }
