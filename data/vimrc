@@ -21,6 +21,9 @@ noremap <c-b> :Tagbar<cr>
 noremap <c-f> :tabNext<cr>
 noremap <c-n> :set invnumber<cr> :set list!<cr>
 noremap <c-p> :set paste!<cr>
+noremap <c-j> :split<cr>
+noremap <c-k> :vsplit<cr>
+noremap <c-l> :q<cr>
 
 "file & encoding
 set encoding=utf-8 " set read encoding to utf-8
