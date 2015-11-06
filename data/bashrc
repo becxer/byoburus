@@ -125,7 +125,9 @@ alias rm='rm -i'
 alias du='du -h'
 alias df='df -kh'
 alias h='histroy'
+alias vi='vim'
 alias vm='vim'
+alias em='emacs'
 
 # git alias
 alias gs="git status"
