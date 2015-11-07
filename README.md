@@ -21,6 +21,13 @@ installation include tools below
     - vifm
     - .vimrc
     - .ctags
+    
+ * prompt set
+ 
+    - color set prompt
+    - useful alias
+    - gitconfig & completion
+    - git prompt
 
 ### HOW TO SETUP
 
