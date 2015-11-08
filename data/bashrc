@@ -136,9 +136,6 @@ alias gcm="git commit"
 alias gl="git gl"
 
 
-# Find file name
-function ff() { find . -name '*'$1'*' ; }
-
 # Swap name between files
 function swap()
 {
@@ -146,27 +143,6 @@ function swap()
     mv $1 $TMPFILE
     mv $2 $1
     mv $TMPFILE $2
-}
-
-# Show process (pt is tree view)
-function pp() { ps $@ -u $USER -o pid,%cpu,%mem,bsdtime,command ; }
-function pt() { my_ps f | awk '!/awk/ && $0~var' var=${1:-".*"} ; }
-
-# Kill process with name
-function killps()
-{
-    local pid pname sig="-TERM"
-    if [ "$#" -lt 1 ] || [ "$#" -gt 2 ]; then 
-        echo "Usage: killps [-SIGNAL] pattern"
-        return;
-    fi
-    if [ $# = 2 ]; then sig=$1 ; fi
-    for pid in $(pp | awk '!/awk/ && $0~pat { print $1 }' pat=${!#} ) ; do
-        pname=$(pp | awk '$1~var { print $5 }' var=$pid )
-        if ask "Kill process $pid <$pname> with signal $sig?"
-            then kill $sig $pid
-        fi
-    done
 }
 
 # Show host information
