@@ -29,6 +29,7 @@ git clone https://github.com/scrooloose/nerdtree.git
 git clone https://github.com/majutsushi/tagbar.git
 git clone https://github.com/aperezdc/vim-template.git
 git clone --recursive https://github.com/davidhalter/jedi-vim.git
+git clone https://github.com/google/vim-searchindex.git
 
 echo "..."
 echo "=================================================="
