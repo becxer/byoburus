@@ -39,6 +39,7 @@ set smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class "in
 set nocindent " no auto indent like c,c++,java style
 set listchars=tab:>-,trail:.,extends:>,precedes:<,eol:$ "set space,tab to char
 set list "set listchars above
+set mouse=an
 colorscheme ron " set color scheme
 
 "keep 80 columns
