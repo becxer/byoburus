@@ -206,7 +206,6 @@ fi)'
 # cat ~/.bavatar.txt
 
 # Set display name
-DISPLAY=$(who am i)
-echo -e '\033[1;36m'$DISPLAY'\033[0m'
-unset DISPLAY
-
+echo -e '\033[1;36m'Concurrent users are............................'\033[0m'
+w
+echo -e '\033[1;36m'................................................'\033[0m'
