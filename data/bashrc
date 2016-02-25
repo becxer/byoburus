@@ -165,11 +165,6 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# Set display name
-DISPLAY=$(who am i)
-echo -e '\033[1;36m'$DISPLAY'\033[0m'
-unset DISPLAY
-
 #set git include PS1
 source ~/.git-completion.bash
 source ~/.git-prompt.sh
@@ -206,3 +201,12 @@ fi)'
 
 # Byobu's prompt (You can remove this)
 # [ -r ~/.byobu/prompt ] && . ~/.byobu/prompt   #byobu-prompt#
+
+# show login avartar
+# cat ~/.bavatar.txt
+
+# Set display name
+DISPLAY=$(who am i)
+echo -e '\033[1;36m'$DISPLAY'\033[0m'
+unset DISPLAY
+

@@ -16,6 +16,9 @@ cp ./data/git-completion.bash ~/.git-completion.bash
 cp ./data/gitconfig ~/.gitconfig
 cp ./data/gitmessage.txt ~/.gitmessage.txt
 
+#add bavatar
+cp ./data/bavatar.txt ~/.bavatar.txt
+
 source ~/.profile
 
 echo "..."
