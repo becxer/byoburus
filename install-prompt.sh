@@ -1,6 +1,8 @@
 #install git required to git prompt
 sudo apt-get update
 sudo apt-get install git
+sudo apt-get install toilet
+sudo apt-get install jp2a
 
 #replace bashrc & profile
 cp ~/.bashrc ~/.bashrc.bk
@@ -17,7 +19,7 @@ cp ./data/gitconfig ~/.gitconfig
 cp ./data/gitmessage.txt ~/.gitmessage.txt
 
 #add bavatar
-cp ./data/bavatar.txt ~/.bavatar.txt
+cp ./data/bavatar.jpg ~/.bavatar.jpg
 
 source ~/.profile
 
