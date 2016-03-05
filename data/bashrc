@@ -135,6 +135,8 @@ alias ga="git add"
 alias gcm="git commit"
 alias gl="git gl"
 
+# simple http server
+alias serve="python -mSimpleHTTPServer"
 
 # Swap name between files
 function swap()
