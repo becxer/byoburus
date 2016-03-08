@@ -18,7 +18,7 @@ cp ./data/profile ~/.profile
 cp ~/.zshrc ~/.zshrc.bk
 cp ./data/zshrc ~/.zshrc
 cp ./data/byoburus.zsh-theme ~/.oh-my-zsh/themes/byoburus.zsh-theme
-cp ./data/byoburus.plugin.zsh ~/.oh-my-zsh/plugins/byoburus/byoburus.plugin.zsh
+cp -r ./data/byoburus ~/.oh-my-zsh/plugins/byoburus
 
 #add git prompt & git completion
 cp ./data/git-prompt.sh ~/.git-prompt.sh
