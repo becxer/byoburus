@@ -19,8 +19,7 @@ cp ~/.zshrc ~/.zshrc.bk
 cp ./data/zshrc ~/.zshrc
 cp ./data/byoburus.zsh-theme ~/.oh-my-zsh/themes/byoburus.zsh-theme
 cp -r ./data/byoburus ~/.oh-my-zsh/plugins/byoburus
-cd ~/.oh-my-zsh/plugins
-git clone https://github.com/djui/alias-tips.git
+git clone https://github.com/djui/alias-tips.git ~/.oh-my-zsh/plugins/alias-tips
 
 #add git prompt & git completion
 cp ./data/git-prompt.sh ~/.git-prompt.sh
