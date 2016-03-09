@@ -39,8 +39,8 @@ function ii()
 }
 
 # show login avartar
-# jp2a --background=light --width=50 --colors ~/.bavatar.jpg
-# toilet -f mono9 -F gay "Becxer_"
+jp2a --background=light --width=50 --colors ~/.bavatar.jpg
+toilet -f mono9 -F gay $(whoami)_
 
 # Set display name
 echo -e '\033[1;36m'Concurrent users are............................'\033[0m'
