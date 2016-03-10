@@ -22,6 +22,9 @@ cp ./data/gitmessage.txt ~/.gitmessage.txt
 #add bavatar
 cp ./data/bavatar.jpg ~/.bavatar.jpg
 
+#for ko_KR
+sudo locale-gen "ko_KR.UTF-8"
+
 echo "..."
 echo "=================================================="
 echo "Install Complete"
