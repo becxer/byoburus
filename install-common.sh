@@ -9,11 +9,6 @@ sudo apt-get install git
 sudo apt-get install iftop
 sudo apt-get install curl
 
-#install language for default
-sudo apt-get install python-numpy python-scipy python-matplotlib ipython ipython-notebook python-pandas python-sympy python-nose
-sudo apt-get install build-essential python-dev python-setuptools libatlas-dev libatlas3gf-base
-sudo apt-get install python-pip
-
 #install byobu
 sudo apt-get install libncursesw5-dev
 sudo apt-get install byobu

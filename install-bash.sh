@@ -21,8 +21,6 @@ cp ./data/gitmessage.txt ~/.gitmessage.txt
 #add bavatar
 cp ./data/bavatar.jpg ~/.bavatar.jpg
 
-source ~/.profile
-
 echo "..."
 echo "=================================================="
 echo "Install Complete"
