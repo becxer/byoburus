@@ -39,6 +39,10 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
+export TERM="xterm-color"                                                          
+export CLICOLOR=1                                                                  
+export LSCOLORS=ExFxCxDxBxegedabagacad
+
 # Set color values
 # Reset
 Color_Off="\[\033[0m\]"       # Text Reset
