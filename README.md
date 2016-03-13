@@ -21,4 +21,4 @@ installation include tools below
         $./install-env.sh
     
     
-[!alt byoburus](https://raw.githubusercontent.com/becxer/byoburus/master/byobu_screenshot.png)
+![alt byoburus](https://raw.githubusercontent.com/becxer/byoburus/master/byobu_screenshot.png)
