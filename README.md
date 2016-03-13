@@ -8,37 +8,17 @@ installation include tools below
 
     - htop
     - emacs
-    - scikit
     - pydemon
     - java
     - iftop
-    
- * vim set
-
-    - vim
-    - vim-plugin(jedi,NERDTree,tag,template)
-    - ctags
-    - vifm
-    - .vimrc
-    - .ctags
-    
- * prompt set
- 
-    - color set prompt
-    - useful alias
-    - gitconfig & completion
-    - git prompt
+    - python packages
+    - scikit
 
 ### HOW TO SETUP
 
- * To install dev set
+ * To install env set
 
-        $./install-dev.sh
+        $./install-env.sh
     
- * To install vim set
- 
-        $./install-vim.sh
-
- * To install prompt
- 
-        $./install-prompt.sh
+    
+[!alt byoburus](https://raw.githubusercontent.com/becxer/byoburus/master/byobu_screenshot.png)
