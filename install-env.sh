@@ -21,3 +21,6 @@ sudo ./configure
 sudo make
 sudo make install
 
+#add git config & message
+cp ./data/gitconfig ~/.gitconfig
+cp ./data/gitmessage.txt ~/.gitmessage.txt
