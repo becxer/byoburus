@@ -1,6 +1,6 @@
 #byoburus
 
-becxer's byobuable development environment
+becxer's byobuable tools & development environment
 
 installation include tools below
 
