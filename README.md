@@ -4,8 +4,6 @@ becxer's byobuable tools & development environment
 
 installation include tools below
 
- * dev set
-
     - htop
     - emacs
     - pydemon
@@ -13,12 +11,17 @@ installation include tools below
     - iftop
     - python packages
     - scikit
+    - most
+    - emacs.d
+    - vimrc
+    - bashrc
+    - zshrc
+    - vifm
 
 ### HOW TO SETUP
 
- * To install env set
 
-        $./install-env.sh
+    $./install-{module}.sh
     
     
 ![alt byoburus](https://raw.githubusercontent.com/becxer/byoburus/master/byobu_screenshot.png)
