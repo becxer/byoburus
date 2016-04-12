@@ -1,6 +1,6 @@
 #byoburus
 
-becxer's byobuable tools & development environment
+becxer's linux tools & developing environment (no-conflict with byobu) 
 
 installation include tools below
 
