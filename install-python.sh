@@ -7,3 +7,5 @@ sudo apt-get install build-essential python-dev python-setuptools libatlas-dev l
 sudo apt-get install python-pip
 
 sudo pip install virtualenv
+sudo pip install jedi
+sudo pip install epc
