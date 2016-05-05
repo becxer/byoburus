@@ -1,5 +1,6 @@
 #apt-get setting 
 sudo apt-add-repository ppa:webupd8team/java
+sudo add-apt-repository ppa:git-core/ppa
 sudo apt-get update
 
 #linux tools
