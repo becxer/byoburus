@@ -1,6 +1,7 @@
 #install git required to git prompt
 sudo add-apt-repository ppa:git-core/ppa
 sudo apt-get update
+sudo apt-get remove git
 sudo apt-get install git
 
 cp -r ~/.emacs.d ~/.emacs.d.bk
