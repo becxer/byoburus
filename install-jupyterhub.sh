@@ -26,5 +26,9 @@ sudo python -m pip install ipykernel
 #  jupyterhub_config.py
 #  c.JupyterHub.ssl_cert = '/etc/letsencrypt/live/my-domain/fullchain.pem'
 #  c.JupyterHub.ssl_key = '/etc/letsencrypt/live/my-domain/privkey.pem'
-#  
+#
+#  To use CUDA
+#  c.Spawner.env_keep.append('LD_LIBRARY_PATH')
+#
 #  sudo jupyterhub 
+#
