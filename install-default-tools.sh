@@ -1,15 +1,10 @@
-#remove olds
-sudo apt-get remove git
-
 #apt-get setting 
 sudo apt-add-repository ppa:webupd8team/java
-sudo add-apt-repository ppa:git-core/ppa
 sudo apt-get update
 
 #linux tools
 sudo apt-get install ssh
 sudo apt-get install htop
-sudo apt-get install git
 sudo apt-get install iftop
 sudo apt-get install curl
 sudo apt-get install most
