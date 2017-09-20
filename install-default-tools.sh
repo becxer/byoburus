@@ -1,7 +1,3 @@
-#apt-get setting 
-sudo apt-add-repository ppa:webupd8team/java
-sudo apt-get update
-
 #linux tools
 sudo apt-get install ssh
 sudo apt-get install htop
