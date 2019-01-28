@@ -8,8 +8,6 @@ sudo apt-get install most
 #install byobu
 sudo apt-get install libncursesw5-dev
 sudo apt-get install byobu
-sudo pip install pydemon
 
-#add git config & message
 cp ./data/gitconfig ~/.gitconfig
 cp ./data/gitmessage.txt ~/.gitmessage.txt
